@@ -1,0 +1,133 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:#021526;
+}
+
+.navigation{
+    height:11vh;
+    width: 100vw;
+    background-color:#021526;
+    border: none;
+    margin-top: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.navigation ul,a{
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+    color:#E2E2B6;
+    font-size: larger;
+    display:flex;
+    justify-content:space-around;
+}
+
+.scrollbar{
+    height: 2px;
+    width: 100vw;
+    position: fixed;
+    top: 73px;
+    z-index:4;
+    background-color:#E2E2B6;
+    scale: 0 1;
+    transform-origin: left;
+
+    animation: bar linear;
+    animation-timeline: scroll();
+}
+
+@keyframes bar{
+    to{scale: 1 1;}
+}
+
+
+/*     HOME    */
+.home{
+    height: 500px;
+    width: 100vw;
+    background-color:#021526;
+    display:flex;
+}
+
+.left h1{
+    width: 100vw;
+    margin-top: 50px;
+}
+
+.left{
+    width: 750vw;
+    color: #6EACDA;
+    padding-top: 100px;
+    padding-left: 120px;
+}
+
+.left h1 span{
+    color:#E2E2B6;
+}
+.btn{
+    display: flex;
+}
+.btn button{
+    padding: 10px;
+    width: 15vw;
+    border-radius: 7px;
+    background-color:#E2E2B6 ;
+    color:#000000;
+    font-size: 15px;
+    font-family:'Lucida Sans', Geneva;
+}
+
+.btn button:active{
+    background-color: #6EACDA;
+    color: #021526;
+}
+
+.right img{
+    justify-content: center;
+    margin-top: 50px; 
+    height: 400px;
+    position: absolute;
+    left: 640px;
+    z-index: 1;
+   
+}
+
+#about{
+    height: 100vh;
+    margin-top: 30px;
+    display: flex;
+}
+.leftabout img{
+    width: 35vw;
+    padding-left: 20%;
+    padding-top: 50px;
+
+   }
+
+.aboutdata{
+    color: #E2E2B6;
+    position: relative;
+    left: 190px;
+    top: 60px;
+    list-style: none;
+}
+hr{
+    margin: 10px;
+}
+.info{
+   color: #6EACDA;
+   padding-bottom: 5px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.aboutdata li{
+    list-style: none;
+}
+.aboutdata ul{
+    padding-left: 17px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
